@@ -1,5 +1,6 @@
-img {
+﻿img {
     margin: 0 50px;
+    border:1px solid black;
 }
 
 img:hover {
