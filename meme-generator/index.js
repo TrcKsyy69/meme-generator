@@ -23,22 +23,15 @@ function renderFooterText (e) {
 header.addEventListener('keyup', renderHeaderText)
 footer.addEventListener('keyup', renderFooterText)
 
-const getallen = [1,2,3,4,5]
+document.querySelectorAll('.image')
+.forEach(function (e) {
+    e.addEventListener('click', renderImage)
+})
 
-function plus5 (n) {
-    return n + 5;
+function renderImage (e) {
+    const url = e.target.src;
+
+    console.log(url)
+
+    document.querySelector('.grey').src = url
 }
-
-function min50 (n) {
-    return n - 50;
-}
-
-function keer (n, m) {
-    return n * m;
-}
-
-var getal1 = 5;
-var getal2 = plus5(20);
-
-
-

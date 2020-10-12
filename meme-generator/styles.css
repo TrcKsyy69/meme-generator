@@ -1,9 +1,9 @@
-﻿img {
+﻿.image {
     margin: 0 50px;
     border:1px solid black;
 }
 
-img:hover {
+.image:hover {
     cursor: pointer;
     border: 5px solid red;
 }
