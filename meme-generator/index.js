@@ -8,8 +8,20 @@ function print (e) {
 
 const xs = [header, footer]
 
-header.addEventListener('keyup', print)
-footer.addEventListener('keyup', print)
+function renderHeaderText (e) {
+    const text = e.target.value;
+
+    document.querySelector('.textInput #header').innerHTML = text;
+}
+
+function renderFooterText (e) {
+    const text = e.target.value;
+
+    document.querySelector('.textInput #footer').innerHTML = text;
+}
+
+header.addEventListener('keyup', renderHeaderText)
+footer.addEventListener('keyup', renderFooterText)
 
 const getallen = [1,2,3,4,5]
 
@@ -28,4 +40,5 @@ function keer (n, m) {
 var getal1 = 5;
 var getal2 = plus5(20);
 
-// keer(5, 10);
+
+
