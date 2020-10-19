@@ -6,9 +6,9 @@
     <body>
         <h1>Meme generator</h1>
 
-        <img src="images/meme.jpg" width="300"/>
-        <img src="images/meme.jpg" width="300"/>
-        <img src="images/meme.jpg" width="300"/>
+        <img class="images" src="images/meme.jpg" width="300"/>
+        <img class="images" src="images/meme.jpg" width="300"/>
+        <img class="images" src="images/meme.jpg" width="300"/>
         <br/>
         <br/>
         <input class="headerInput" type="text" placeholder="Header text here">
@@ -16,10 +16,11 @@
         <input class="footerInput" type="text" placeholder="Footer text here">
         <br/>
         <br/>
-        <p>
+        <div class="meme-container">
+            <img class="memeImage" width="300" height="300px"/>
             <span id="header"></span>
             <span id="footer"></span>
-        </p>
+        </div>
 
         <script src="index.js"></script>
     </body>

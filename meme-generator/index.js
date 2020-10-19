@@ -1,31 +1,33 @@
 const header = document.querySelector('.headerInput');
 const footer = document.querySelector('.footerInput');
 
+const images = document.querySelectorAll('.images')
+
 function print (e) {
     const element = e.target;
     console.log(element.value);
 }
 
-const xs = [header, footer]
+header.addEventListener('keyup', renderText('#header'))
+footer.addEventListener('keyup', renderText('#footer'))
 
-header.addEventListener('keyup', print)
-footer.addEventListener('keyup', print)
+images.forEach(e => e.addEventListener('click', setSource))
 
-const getallen = [1,2,3,4,5]
-
-function plus5 (n) {
-    return n + 5;
+function setSource (e) {
+    const memeImage =  document.querySelector('.memeImage')
+    memeImage.src = e.target.src
 }
 
-function min50 (n) {
-    return n - 50;
+function renderText (id) {
+    return function (e) {
+        const text = e.target.value;
+        document.querySelector(id).innerHTML = text;
+    }
 }
 
-function keer (n, m) {
-    return n * m;
-}
+// const lijst = [1,2,3,4,5,6,7]
+// const lijstPlus5 = lijst.map(plus5)
 
-var getal1 = 5;
-var getal2 = plus5(20);
-
-// keer(5, 10);
+// function plus5 (getal) {
+//     return getal + 5
+// }
