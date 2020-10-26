@@ -6,9 +6,9 @@
     <body>
         <h1>Meme generator</h1>
 
-        <img class="images" src="images/walter.jfif" width="300"/>
-        <img class="images" src="images/angry.jpg" width="300"/>
-        <img class="images" src="images/cat.jpg" width="300"/>
+        <img class="images" src="images/walter.jfif"/>
+        <img class="images" src="images/angry.jpg"/>
+        <img class="images" src="images/cat.jpg"/>  
         <br/>
         <br/>
         <input class="headerInput" type="text" placeholder="Header text here">
@@ -18,10 +18,13 @@
         <br/>
         <div class="meme-container">
             <img class="memeImage" width="300" height="300px"/>
-            <span id="header"></span>
-            <span id="footer"></span>
+            <p id="header"></p>
+            <p id="footer"></p>
         </div>
 
+        <button>generate!</button>
+
+        <script src="html2canvas.js"></script>
         <script src="index.js"></script>
     </body>
 </html>
