@@ -2,6 +2,7 @@
     font-family: memeFont;
     src: url(impact.ttf);
   }
+
   
   div {
     font-family: myFirstFont;
@@ -14,14 +15,13 @@
 img {
     width: 300px;
     height: 316px;
-    margin: 0 50px;
+    margin: 1 5px;
 }
 
 .images:hover {
-    cursor: pointer;
     border: 5px solid black;
-
 }
+
 .memeImage {
     background-color: grey;
 
@@ -58,7 +58,7 @@ img {
     display: -webkit-box;
     overflow: hidden;
     -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
     overflow-wrap: break-word;
+    display:block
   }
 
