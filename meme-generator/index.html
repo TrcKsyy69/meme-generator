@@ -1,20 +1,38 @@
 <html>
     <head>
         <title>Meme generator</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
         <link href="styles.css" rel="stylesheet"/>
     </head>
     <body>
-        <h1>Meme generator</h1>
+        <heading>
+            <img src="images/peepee.jpg" style="height: 110;" width="100">
+            <h1>generate your own meme!</h1>
+        </heading> 
 
-        <img class="images" src="images/walter.jfif"/>
-        <img class="images" src="images/angry.jpg"/>
-        <img class="images" src="images/cat.jpg"/> 
-        <img src="images/peepee.jpg" style="height: 110;" width="100">
-        <br/>
-        <br/>
-        <input class="headerInput" type="text" placeholder="Top text">
-        <br/>
-        <input class="footerInput" type="text" placeholder="bottom text">
+        <div class="imageSelect">
+            <p>step 1, select an image</p>
+            <div class="imageContainer">
+             <img class="images" src="images/walter.jfif"/>
+             <img class="images" src="images/angry.jpg"/>
+             <img class="images" src="images/cat.jpg"/>
+            </div>
+         </div>
+
+
+
+
+        <div class="memeTyper">
+            <p>step 2, enter text</p>
+            <div>
+              <input class="headerInput" type="text" placeholder="Top text">
+              <br/>
+             <input class="footerInput" type="text" placeholder="bottom text">
+          </div>
+        </div>
+
+
+
         <br/>
         <br/>
         <div class="meme-container">
